@@ -1,5 +1,5 @@
-import { createContext, useCallback, useState, useRef, useContext, useEffect } from 'react';
-import { generateEmptyGrid, generateRandomGrid, computeNextGeneration } from '../services/gameLogic';
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { computeNextGeneration, generateEmptyGrid, generateRandomGrid } from '../services/gameLogic';
 
 const GameContext = createContext();
 const CELL_SIZE = 15;
@@ -81,7 +81,8 @@ export const GameProvider = ({ children }) => {
 		randomizeGrid,
 		toggleCellState,
 		run,
-		jumpForward
+		jumpForward,
+		CELL_SIZE
 	};
 
 	return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
