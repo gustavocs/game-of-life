@@ -1,0 +1,32 @@
+.label {
+	color: #fff;
+	padding: 12px;
+	background-color: #000;
+	opacity: 0.9;
+}
+
+.controls {
+	margin: 12px;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	position: fixed;
+}
+
+.controls button {
+	padding: 8px 12px;
+	font-size: 14px;
+	cursor: pointer;
+	background: #111;
+	color: #fff;
+	opacity: 0.9;
+}
+
+.controls button[disabled] {
+	color: #aaa;
+	cursor: auto;
+}
+
+.controls button:hover {
+	background: #111;
+}
